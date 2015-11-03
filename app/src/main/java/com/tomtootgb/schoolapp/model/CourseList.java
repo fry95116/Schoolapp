@@ -23,7 +23,7 @@ public class CourseList extends Collection{
     }
 
     private Course static_courseList[] = null;
-    private HashSet<Course> myCourseList = new HashSet<Course>();
+    private ArrayList<Course> myCourseList = new ArrayList<Course>();
     private OnModelChangedListener listener = null;
 
     private CourseList(){
@@ -105,7 +105,7 @@ public class CourseList extends Collection{
         notifyDataReseted();
     }
 
-    void resetMyCourseList(HashSet<Course> mcl){
+    void resetMyCourseList(ArrayList<Course> mcl){
         this.myCourseList = mcl;
         notifyDataReseted();
     }

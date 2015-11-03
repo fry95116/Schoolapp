@@ -12,7 +12,6 @@ public abstract class Model {
     private final int OBS_COUNT = 16;
     protected ArrayList<OnModelChangedListener> obs = new ArrayList<OnModelChangedListener>(OBS_COUNT);
 
-
     public boolean addOnModelChangedListener(OnModelChangedListener ob){
         if(obs.size() < OBS_COUNT){
             obs.add(ob);

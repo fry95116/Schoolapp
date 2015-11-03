@@ -63,21 +63,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                             .setTabListener(this));
         }
 
-        Schedule_item[] sch = new Schedule_item[3];
-        int wks[] = {1,1,2};
-        sch[0] = new Schedule_item(wks, 1, 1);
-        sch[1] = new Schedule_item(wks, 2, 2);
-        sch[2] = new Schedule_item(wks, 3, 3);
-        Course test = new Course("name1","teacher1",sch);
-
-        wks[0] = 4;
-        wks[1] = 4;
-        wks[2] = 5;
-        sch[0] = new Schedule_item(wks, 4, 4);
-        sch[1] = new Schedule_item(wks, 5, 5);
-        sch[2] = new Schedule_item(wks, 6, 6);
-        Course test2 = new Course("name2","teacher2",sch);
-
     }
 
 
